@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AcademicoChat</string>
+    <string name="bem_vindo">Bem Vindos</string>
+    <string name="login_para_continuar">Login para continuar</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="criar_nova_conta">Criar Nova Conta</string>
+    <string name="adicionar_foto">Adicionar Foto</string>
+    <string name="nome">Nome</string>
+    <string name="repetir_a_senha">Repetir a Senha</string>
+    <string name="inscrever">Inscrever</string>
+    <string name="j_possui_conta_entrar">Já possui conta? Entrar</string>
+</resources>
