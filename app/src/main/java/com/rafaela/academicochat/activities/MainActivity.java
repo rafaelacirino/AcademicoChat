@@ -1,4 +1,4 @@
-package com.rafaela.academicochat;
+package com.rafaela.academicochat.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.rafaela.academicochat.activities.SignInActivity;
+import com.rafaela.academicochat.R;
 
 public class MainActivity extends AppCompatActivity {
 

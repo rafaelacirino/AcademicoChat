@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "558241393724",
+    "project_id": "chat-academico",
+    "storage_bucket": "chat-academico.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558241393724:android:4d3764f1a1e598d81da739",
+        "android_client_info": {
+          "package_name": "com.rafaela.academicochat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558241393724-krtn9kvd09eif4q0757vll046h1u2j69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0PDCBt61R9tQfYn5ceOezxDz72wyN8CA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558241393724-krtn9kvd09eif4q0757vll046h1u2j69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
