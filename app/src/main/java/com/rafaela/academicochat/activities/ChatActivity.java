@@ -4,13 +4,30 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import com.rafaela.academicochat.R;
+import com.rafaela.academicochat.databinding.ActivityChatBinding;
+import com.rafaela.academicochat.models.User;
+import com.rafaela.academicochat.utilities.Constants;
 
 public class ChatActivity extends AppCompatActivity {
+
+    private ActivityChatBinding binding;
+    private User receiverUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_chat);
+        binding = ActivityChatBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+        setListeners();
+        loadReceiverDetails();
+    }
+
+    private void loadReceiverDetails() {
+        receiverUser = (User) getIntent().getSerializableExtra(Constants.KEY_USER);
+        binding.textName.setText(receiverUser.name);
+    }
+
+    private void setListeners() {
+        binding.imageBack.setOnClickListener(v -> onBackPressed());
     }
 }
