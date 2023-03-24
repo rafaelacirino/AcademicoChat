@@ -1,7 +1,5 @@
 package com.rafaela.academicochat.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -30,7 +28,7 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 
-public class UserProfileActivity extends AppCompatActivity implements ConversionListener {
+public class UserProfileActivity extends BaseActivity implements ConversionListener {
 
     private ActivityUserProfileBinding binding;
     private PreferenceManager preferenceManager;
@@ -134,7 +132,7 @@ public class UserProfileActivity extends AppCompatActivity implements Conversion
     private void updateToken(String token) {
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
-                database.collection(Constants.KEY_COLECTION_USERS).document(
+                database.collection(Constants.KEY_COLLECTION_USERS).document(
                         preferenceManager.getString(Constants.KEY_USER_ID)
                 );
         documentReference.update(Constants.KEY_FCM_TOKEN, token)
@@ -145,7 +143,7 @@ public class UserProfileActivity extends AppCompatActivity implements Conversion
         showToasts("Saindo da conta...");
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
-                database.collection(Constants.KEY_COLECTION_USERS).document(
+                database.collection(Constants.KEY_COLLECTION_USERS).document(
                         preferenceManager.getString(Constants.KEY_USER_ID)
                 );
         HashMap<String, Object> updates = new HashMap<>();
