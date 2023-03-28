@@ -92,6 +92,7 @@ public class UserProfileActivity extends BaseActivity implements ConversionListe
                     String senderId = documentChange.getDocument().getString(Constants.KEY_SENDER_ID);
                     String receiverId = documentChange.getDocument().getString(Constants.KEY_RECEIVER_ID);
                     ChatMessage chatMessage = new ChatMessage();
+                    chatMessage.senderId = senderId;
                     chatMessage.receiverId = receiverId;
                     if(preferenceManager.getString(Constants.KEY_USER_ID).equals(senderId)) {
                         chatMessage.conversionImage = documentChange.getDocument().getString(Constants.KEY_RECEIVER_IMAGE);
@@ -130,6 +131,7 @@ public class UserProfileActivity extends BaseActivity implements ConversionListe
     }
 
     private void updateToken(String token) {
+        preferenceManager.putString(Constants.KEY_FCM_TOKEN, token);
         FirebaseFirestore database = FirebaseFirestore.getInstance();
         DocumentReference documentReference =
                 database.collection(Constants.KEY_COLLECTION_USERS).document(
