@@ -1,9 +1,6 @@
 package com.rafaela.academicochat.firebase;
 
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
-
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;

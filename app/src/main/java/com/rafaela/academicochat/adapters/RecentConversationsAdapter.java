@@ -30,7 +30,7 @@ public class RecentConversationsAdapter extends RecyclerView.Adapter<RecentConve
     @Override
     public ConversionViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ConversionViewHolder(
-                ItemContainerRecentConversionBinding.inflate(
+                        ItemContainerRecentConversionBinding.inflate(
                         LayoutInflater.from(parent.getContext()),
                         parent,
                         false

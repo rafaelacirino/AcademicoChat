@@ -56,7 +56,7 @@
             android:layout_height="@dimen/_45sdp"
             android:layout_marginTop="@dimen/_20sdp"
             android:background="@drawable/background_input"
-            android:hint="@string/nome"
+            android:hint="@string/nomeCompleto"
             android:imeOptions="actionNext"
             android:importantForAutofill="no"
             android:inputType="text"

@@ -30,6 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
     private ActivitySignUpBinding binding;
     private PreferenceManager preferenceManager;
     private String encodedImage;
+    private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+ifpb.edu.br+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,12 +120,12 @@ public class SignUpActivity extends AppCompatActivity {
             showToast("Selecione uma imagem de perfil");
             return false;
         } else if(binding.inputName.getText().toString().trim().isEmpty()) {
-            showToast("Digite seu nome");
+            showToast("Digite seu nome completo");
             return false;
         } else if(binding.inputEmail.getText().toString().trim().isEmpty()) {
             showToast("Digite seu email");
             return false;
-        } else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
+        } else if(!binding.inputEmail.getText().toString().matches(emailPattern)){
             showToast("Digite um email válido");
             return false;
         } else if (binding.inputPassword.getText().toString().trim().isEmpty()) {

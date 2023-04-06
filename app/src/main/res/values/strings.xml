@@ -15,4 +15,6 @@
     <string name="selecione_usuario">Selecione Usuário</string>
     <string name="digite_uma_mensagem">Digite uma mensagem</string>
     <string name="online">Online</string>
+    <string name="sobrenome">Sobrenome</string>
+    <string name="nomeCompleto">Nome Completo</string>
 </resources>

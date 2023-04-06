@@ -18,6 +18,7 @@ public class SignInActivity extends AppCompatActivity {
 
     private ActivitySignInBinding binding;
     private PreferenceManager preferenceManager;
+    private String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+ifpb.edu.br+";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,7 +87,7 @@ public class SignInActivity extends AppCompatActivity {
         if(binding.inputEmail.getText().toString().trim().isEmpty()) {
             showToast("Digite um email");
             return false;
-        } else if(!Patterns.EMAIL_ADDRESS.matcher(binding.inputEmail.getText().toString()).matches()) {
+        } else if(!binding.inputEmail.getText().toString().matches(emailPattern)) {
             showToast("Digite um email válido");
             return false;
         } else if(binding.inputPassword.getText().toString().trim().isEmpty()) {
