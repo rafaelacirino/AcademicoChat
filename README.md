@@ -1,6 +1,4 @@
-<p align="center">
-    [logo IFPB](https://github.com/rafaelacirino/prototipagem/blob/main/logo_campus.png)<br />
-</p>
+[logo IFPB](https://github.com/rafaelacirino/prototipagem/blob/main/logo_campus.png)<br />
 
 # Chat Acadêmico – Trabalho de Conclusão de Curso de Rafaela Borba Falcão Cirino
 
