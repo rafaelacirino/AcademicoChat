@@ -12,5 +12,5 @@ Esse repositório contém código desenvolvido por Rafaela Cirino para o TCC de 
 
 ### 2. Clicar em run
 
-### 3. Escolher multiple devices para visualizar as mensagens sendo enviadas para dois emuladores. 
+### 3. Escolher multiple devices para simular as mensagens sendo enviadas para dois emuladores. 
 
