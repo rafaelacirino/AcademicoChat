@@ -1,5 +1,5 @@
 <p align="center">
-    <img width="400" height="200" src=" https://github.com/rafaelacirino/prototipagem/blob/main/logo_campus.png " title="Logo IFPB"><br />
+    [logo IFPB](https://github.com/rafaelacirino/prototipagem/blob/main/logo_campus.png)<br />
 </p>
 
 # Chat Acadêmico – Trabalho de Conclusão de Curso de Rafaela Borba Falcão Cirino
